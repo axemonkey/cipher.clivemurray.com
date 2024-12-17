@@ -1,7 +1,7 @@
 @import "vars";
 
 header {
-	background-color: $munchkin-bg;
+	background-color: $bgcolour;
 
 	// background-position: center center;
 	// background-repeat: no-repeat;
@@ -13,8 +13,9 @@ header {
 .header-inner {
 	margin: 1rem auto;
 	max-width: 1040px;
-	padding-left: 160px;
-	padding-right: 100px;
-	background: url("/public/images/male.png") left top no-repeat,
-		url("/public/images/female.png") right top no-repeat;
+	padding-left: 100px;
+	padding-right: 130px;
+	min-height: 200px;
+	background: url("/public/images/dipper.png") left top no-repeat,
+		url("/public/images/mabel.png") right top no-repeat;
 }

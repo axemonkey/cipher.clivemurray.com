@@ -8,14 +8,14 @@ $fieldWidth: 100%;
 	padding: 5px;
 	border: $borderStyle;
 	border-radius: $borderRadius;
-	color: $munchkin-text;
-	background-color: color.adjust($munchkin-bg, $lightness: 10%);
+	color: $textcolour;
+	background-color: color.adjust($bgcolour, $lightness: 10%);
 }
 
 fieldset {
 	padding: 1em;
 	margin-bottom: 2rem;
-	border: 2px solid $munchkin-text;
+	border: 2px solid $textcolour;
 	border-radius: 8px;
 }
 
@@ -62,7 +62,7 @@ input[type="text"] {
 	left: 2px;
 	width: 40px;
 	height: 40px;
-	border: 2px solid $munchkin-text;
+	border: 2px solid $textcolour;
 	border-radius: 50%;
 	background: transparent;
 	cursor: pointer;
@@ -75,7 +75,7 @@ input[type="text"] {
 	left: 12px;
 	width: 0;
 	height: 0;
-	border: 10px solid $munchkin-text;
+	border: 10px solid $textcolour;
 	border-radius: 50%;
 	opacity: 0;
 	background: currentcolor;
@@ -100,13 +100,13 @@ button {
 	font-size: 4rem;
 	font-family: $main-font;
 	text-align: center;
-	color: $munchkin-bg;
-	background-color: $munchkin-text;
-	border: 6px outset color.adjust($munchkin-text, $lightness: 20%);
+	color: $bgcolour;
+	background-color: $textcolour;
+	border: 6px outset color.adjust($textcolour, $lightness: 20%);
 	border-radius: 200px;
 	padding: 1rem 3rem;
 }
 
 button:hover {
-	background-color: color.adjust($munchkin-text, $lightness: 20%);
+	background-color: color.adjust($textcolour, $lightness: 20%);
 }
