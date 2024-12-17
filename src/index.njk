@@ -1,0 +1,34 @@
+---
+layout: main.njk
+title: Vigenère Cipher Decoder
+---
+
+<main>
+
+	<header>
+		<div class="header-inner">
+			<h1>Gravity Falls</h1>
+			<h2>Vigenere Ciper Decoder</h2>
+			<p class="lede">Enter the encoded text, then add the key and marvel as the message is revealed!</p>
+		</div>
+	</header>
+
+	<form>
+		<fieldset id="encodedFieldset">
+			<legend>Encoded text</legend>
+			<textarea name="encoded" id="encoded"></textarea>
+		</fieldset>
+
+		<fieldset id="keyFieldset">
+			<legend>Key</legend>
+			<div class="inputGroup">
+				<input type="text" name="key" id="key" value="">
+			</div>
+		</fieldset>
+	</form>
+
+	<div id="output">
+
+	</div>
+
+</main>

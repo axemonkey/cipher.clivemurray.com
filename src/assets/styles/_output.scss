@@ -1,0 +1,18 @@
+@import "vars";
+
+#generated-output {
+	margin: 2rem;
+	padding: 2rem;
+	color: #000;
+	text-align: center;
+}
+
+#generated-output p {
+	font-size: 3rem;
+	line-height: 1.4;
+}
+
+.munchkin {
+	font-family: $headline-font;
+	color: $munchkin-text;
+}

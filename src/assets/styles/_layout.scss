@@ -1,0 +1,28 @@
+main {
+	display: grid;
+	gap: 1rem;
+	grid-template-rows: auto 1fr;
+	grid-template-columns: 1fr 1fr;
+	width: auto;
+}
+
+header {
+	grid-column: 1 / span 2;
+	top: 0;
+	z-index: 10;
+}
+
+form {
+	grid-column: 1;
+	z-index: 1;
+	padding: 1rem;
+}
+
+#output {
+	grid-column: 2;
+	z-index: 1;
+}
+
+#generated-output {
+	position: static;
+}
