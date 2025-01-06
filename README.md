@@ -12,4 +12,4 @@ http://localhost:8080
 
 ## Deploys to
 
-https://munchkin.clivemurray.com
+https://cipher.clivemurray.com
