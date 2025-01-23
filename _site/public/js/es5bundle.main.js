@@ -75,7 +75,7 @@
 	  const dText = decodeText();
 	  const outputDiv = document.createElement('div');
 	  outputDiv.id = 'generated-output';
-	  const htmlStr = "<p>".concat(dText, "</p>");
+	  const htmlStr = `<p>${dText}</p>`;
 	  outputDiv.innerHTML = htmlStr;
 	  document.querySelector('#output').replaceChildren(outputDiv);
 	};
