@@ -14,10 +14,6 @@
         {
           "source": "src/assets/fonts",
           "destination": "src/public/fonts"
-        },
-        {
-          "source": "src/assets/images",
-          "destination": "src/public/images"
         }
       ],
       "watchPatterns": [
