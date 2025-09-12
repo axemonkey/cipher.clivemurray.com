@@ -2,9 +2,9 @@ const lz = n => {
 	return Number(n) < 10 ? `0${n}` : `${n}`;
 };
 
-const getURLParams = () => {
-	const params = new URLSearchParams(document.location.search);
-	return params;
+const getURLParameters = () => {
+	const parameters = new URLSearchParams(document.location.search);
+	return parameters;
 };
 
 const niceList = array => {
@@ -26,6 +26,6 @@ const niceList = array => {
 
 export {
 	lz,
-	getURLParams,
+	getURLParameters as getURLParams,
 	niceList,
 };

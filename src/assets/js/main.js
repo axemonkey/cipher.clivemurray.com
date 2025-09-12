@@ -88,9 +88,9 @@ const createOutputFromForm = () => {
 	const outputDiv = document.createElement('div');
 	outputDiv.id = 'generated-output';
 
-	const htmlStr = `<p>${dText}</p>`;
+	const htmlString = `<p>${dText}</p>`;
 
-	outputDiv.innerHTML = htmlStr;
+	outputDiv.innerHTML = htmlString;
 	document.querySelector('#output').replaceChildren(outputDiv);
 };
 
