@@ -15,11 +15,11 @@ const getKeyModifier = (letter) => {
 const stripSpaces = (string) => {
 	const newString = [];
 	for (const character of string) {
-		if (character !== " ") {
+		if (character !== ' ') {
 			newString.push(character);
 		}
 	}
-	return newString.join("");
+	return newString.join('');
 };
 
 const getValidLetterCode = (currentCharacterCode, newCharacterCode) => {
@@ -69,21 +69,21 @@ const getDecodedText = (encodedText, key) => {
 				keyIndex = 0;
 			}
 			output.push(newCharacter);
-		} else if (encodedCharacter === "\n") {
-			output.push("<br>");
+		} else if (encodedCharacter === '\n') {
+			output.push('<br>');
 		} else {
 			output.push(encodedCharacter);
 		}
 	}
 
-	return output.join("");
+	return output.join('');
 };
 
 const decodeText = () => {
-	const theForm = document.querySelector("form");
+	const theForm = document.querySelector('form');
 
-	const encodedText = theForm.querySelector("#encoded").value.trim();
-	const key = stripSpaces(theForm.querySelector("#key").value.trim());
+	const encodedText = theForm.querySelector('#encoded').value.trim();
+	const key = stripSpaces(theForm.querySelector('#key').value.trim());
 
 	const decodedText = getDecodedText(encodedText, key);
 
@@ -92,28 +92,28 @@ const decodeText = () => {
 
 const createOutputFromForm = () => {
 	const dText = decodeText();
-	const outputDiv = document.createElement("div");
-	outputDiv.id = "generated-output";
+	const outputDiv = document.createElement('div');
+	outputDiv.id = 'generated-output';
 
 	const htmlString = `<p>${dText}</p>`;
 
 	outputDiv.innerHTML = htmlString;
-	document.querySelector("#output").replaceChildren(outputDiv);
+	document.querySelector('#output').replaceChildren(outputDiv);
 };
 
 const init = () => {
-	const theForm = document.querySelector("form");
-	console.log("load");
+	const theForm = document.querySelector('form');
+	console.log('load');
 
 	createOutputFromForm();
 
 	const eventList = [
-		"change",
-		"keyup",
-		"paste",
-		"input",
-		"propertychange",
-		"click",
+		'change',
+		'keyup',
+		'paste',
+		'input',
+		'propertychange',
+		'click',
 	];
 	const formInputs = theForm.querySelectorAll('input[type="text"], textarea');
 	for (const formInput of formInputs) {
@@ -123,4 +123,4 @@ const init = () => {
 	}
 };
 
-window.addEventListener("load", init);
+window.addEventListener('load', init);
